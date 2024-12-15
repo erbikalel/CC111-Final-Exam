@@ -1,0 +1,187 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:black;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form{
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form label{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    color: black;
+}
+
+form input, form select{
+    display: block;
+    border-radius: 5px;
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a39f9f;
+    font-size: 1rem;
+}
+
+form button{
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+form button:hover{
+    background-color: #040b53;
+}
+
+form a{
+    color: blue;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #868788;
+}
+
+table th{
+    background-color: blue;
+    color:azure;
+    font-weight: 500;
+}
+
+table tr:hover{
+    background-color: white;
+}
+
+table tr td .edit{
+    color: #0c762e;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #0c762e;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+table tr td .edit:hover{
+    background-color: #0c762e;
+    color: white;
+}
+
+table tr td .delete{
+    color: #a11a0b;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #a11a0b;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+table tr td .delete:hover{
+    background-color: #a11a0b;
+    color: white;
+}
+
+button, .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: blue;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    color: white;
+}
+
+button:hover, .btn:hover{
+    background-color: #040b53;
+    transform: translateY(-2px);
+}
+
+button:active, .btn:active{
+    transform: translateY(0);
+}
+
+.add-student-btn{
+    background-color: blue;
+}
+
+.add-student-btn:hover{
+    background-color: #040b53;
+}
+
+.logout-btn{
+    background-color: #a11a0b;
+}
+
+.logout-btn:hover{
+    background-color: #620a0a;
+}
+
+@media (max-width: 765px){
+    form{
+        width: 90%;
+        margin: 20px auto;
+    }
+    table{
+        width: 80%;
+    }
+    table th, table td{
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    form button{
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    table a{
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
